@@ -1,0 +1,5 @@
+ * ec => encode
+ * dc => decode
+ * vl => validate
+ * gn => generate
+ * qe => busca
