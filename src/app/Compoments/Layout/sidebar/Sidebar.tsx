@@ -1,50 +1,79 @@
-import React from "react";
-import './sidebar.css'
-import Link from 'next/link';
-import ToggleButton from 'react-bootstrap/ToggleButton'
-
+import React, { useEffect, useState } from "react";
+import '@/app/Compoments/Layout/sidebar/sidebar.css'
+import Item from "./item";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
 export default function Sidebar({props}: { props: any }) {
+
+    const [show, setShow] = useState<boolean>(false)
+
+    const Itens = [ 
+        { url: "", name: "Codificadores", type: "categoria" },
+        { url: "/url/ec", name: "De Texto para URL", type: "" },
+        { url: "/base64/ec", name: "De Texto para Base64", type: "" },
+        { url: "/url/dc", name: "De URL para Texto", type: "" },
+        { url: "/base64/dc", name: "De Base64 para Texto", type: "" },
+
+        { url: "", name: "Validadores", type: "categoria" },
+        { url: "/cpf", name: "Validar CPF", type: "" },
+
+        { url: "", name: "Encriptar", type: "categoria" },
+        { url: "/md5/ec", name: "MD5", type: "" },
+        { url: "/sha256/ec", name: "SHA256", type: "" },
+        { url: "/sha512/ec", name: "SHA512", type: "" },
+    ]
+
+    function showOptions(){
+        setShow(!show)
+    }
+
+    useEffect( () => {
+        function resize(){
+            setShow(false)
+        }
+        window.addEventListener('resize', resize)
+    } )
 
     return (
         <aside className="root-sidebar">
-            <h4 className="sidebar-opcoes" style={{ textAlign: "center" }}>
+            <h4>
                 Ferramentas
             </h4>
-            <div className="sidebar">                
+            
+            <div className="sidebar-hamburger" hidden={show}>
+                <FontAwesomeIcon 
+                    size="1x" 
+                    icon={faBars} 
+                    onClick={showOptions} />
+             </div>
+
+            <div className="sidebar-close" hidden={!show}>
+                <FontAwesomeIcon 
+                    size="1x" 
+                    icon={faClose} 
+                    onClick={showOptions} />
+            </div>
+
+            <div className={'sidebar'}>                
                 <ul className="list-sidebar">
-                    <li className="categoria-sidebar">Codificadores</li>
-                    <Link href="/url/ec">
-                        <li className="item-sidebar">De Texto para URL</li>
-                    </Link>
-                    <Link href="/base64/ec">
-                        <li className="item-sidebar">De Texto para Base64</li>
-                    </Link>
-
-                    <li className="categoria-sidebar">Decodificadores</li>
-                    <Link href="/url/dc">
-                        <li className="item-sidebar">De URL para Texto</li>
-                    </Link>
-                    <Link href="/base64/dc">
-                        <li className="item-sidebar">De Base64 para Texto</li>
-                    </Link>
-
-                    <li className="categoria-sidebar">Validadores</li>
-                    <Link href="/cpf">
-                        <li className="item-sidebar">Validar CPF</li>
-                    </Link>
-
-                    <li className="categoria-sidebar">Encriptar</li>
-                    <Link href="/md5/ec">
-                        <li className="item-sidebar">MD5</li></Link>
-                    <Link href="/sha256/ec">
-                        <li className="item-sidebar">SHA256</li>
-                    </Link>
-                    <Link href="/sha512/ec">
-                        <li className="item-sidebar">SHA512</li>
-                    </Link>
-
+                    {
+                        Itens.map( (e) =>{
+                            return( <Item props={e}/> )
+                        })
+                    }
                 </ul>
             </div>
+
+            <div className={'sidebar-responsive'} style={{ display: !show ? 'none' : 'block' }}>                
+                <ul className="list-sidebar">
+                    {
+                        Itens.map( (e) =>{
+                            return( <Item props={e}/> )
+                        })
+                    }
+                </ul>
+            </div>
+
         </aside>
     );
 }

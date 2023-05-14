@@ -6,11 +6,10 @@
     padding: .635rem .635rem .635rem 0;
     margin-top: -1rem;
 }
-.root-sidebar h3{
-    background-color: gray;
-    padding: 1rem;
+.root-sidebar h4{
+    text-align: center;
 }
-.sidebar{
+.sidebar, .sidebar-responsive{
     margin: 0 auto;
 }
 
@@ -52,6 +51,17 @@
     border-width: 0 0 1.5px 0;
 }
 
+.sidebar-hamburger{
+    display: none;
+}
+
+.sidebar-close{
+    display: none;
+}
+.sidebar-responsive{
+    display: none;
+}
+
 
 
 @media (min-width: 300px) and (max-width: 667px) { 
@@ -59,16 +69,25 @@
         height: 10%;
         width: 100%;
         overflow-y: auto;
-        padding: .635rem .635rem .635rem 0;
-        margin-top: -1rem;
+        background-color: #e9e9e9;
+        border-top: solid 1px #d3d3d3;
+        border-bottom: solid 1px #d3d3d3;
+        padding: .5rem;
+    }
+
+    .sidebar-hamburger{
+        display: block;
+    }
+    .sidebar-close{
+        display: block;
     }
 
     .sidebar{
         display: none;
     }
 
-    .sidebar-opcoes{
-        cursor: pointer;
+    .root-sidebar h4{
+        display: none;
     }
-    
+        
 }

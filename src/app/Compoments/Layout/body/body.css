@@ -9,8 +9,11 @@
 @media (min-width: 300px) and (max-width: 700px) { 
     .main-root{
         display: block;
+        margin-right: 0;
+
     }
     .container-root{
         display: block;
-    }    
+    }   
+    
 }
