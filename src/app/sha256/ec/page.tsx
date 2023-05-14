@@ -4,7 +4,7 @@ import '../../conversor.css'
 export default function Page(){
 
     return(
-        <div className="my-5">
+        <div>
             <Form>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <InputGroup.Text className="label-name-input">
