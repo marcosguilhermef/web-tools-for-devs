@@ -13,18 +13,18 @@ export default function Sidebar({props}: { props: any }) {
             <div className="sidebar">                
                 <ul className="list-sidebar">
                     <li className="categoria-sidebar">Codificadores</li>
-                    <Link href="/url/dc">
+                    <Link href="/url/ec">
                         <li className="item-sidebar">De Texto para URL</li>
                     </Link>
-                    <Link href="/base64/dc">
+                    <Link href="/base64/ec">
                         <li className="item-sidebar">De Texto para Base64</li>
                     </Link>
 
                     <li className="categoria-sidebar">Decodificadores</li>
-                    <Link href="/url/ec">
+                    <Link href="/url/dc">
                         <li className="item-sidebar">De URL para Texto</li>
                     </Link>
-                    <Link href="/base64/ec">
+                    <Link href="/base64/dc">
                         <li className="item-sidebar">De Base64 para Texto</li>
                     </Link>
 

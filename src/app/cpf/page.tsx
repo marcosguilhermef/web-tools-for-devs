@@ -1,7 +1,7 @@
 'use client'
 import { Form, Button, InputGroup } from "react-bootstrap";
-import '../conversor.css'
-import Fetch from "../util/Fetch";
+import '@/app/conversor.css'
+import Fetch from "@/app/util/Fetch";
 import React, { useState } from "react";
 export default function Page(){
     const [cpf, setCpf] = useState<string>();
@@ -20,7 +20,6 @@ export default function Page(){
 
     return(
         <div>
-            
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <InputGroup.Text className="label-name-input">
                         CPF:

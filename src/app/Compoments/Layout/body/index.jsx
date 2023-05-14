@@ -1,6 +1,6 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Sidebar from "../sidebar/Sidebar";
+import Sidebar from "@/app/Compoments/Layout/sidebar/Sidebar";
 import './body.css'
 export default function Body({children}) {
     return(
