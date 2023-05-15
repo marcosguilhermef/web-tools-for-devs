@@ -19,7 +19,6 @@ export class ValidateCPF implements ToolInterface{
         let cpf = this.parameter.replace(/[^0-9]/g,"");
 
         if( cpf.length !== 11 ){
-            console.log("TESTE DE VALOR: "+1)
             return false;
         }else if(
             cpf === '00000000000' ||
@@ -33,7 +32,6 @@ export class ValidateCPF implements ToolInterface{
             cpf === '88888888888' ||
             cpf === '99999999999'
         ){
-            console.log("TESTE DE VALOR: "+2)
             return false;
         }else{
             for(let t = 9; t < 11 ; t++){

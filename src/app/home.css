@@ -1,0 +1,19 @@
+.home{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+@media (min-width: 0px) and (max-width: 800px){
+    .home{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+/* @media(max-width: 767.98px){
+    .home{
+        display: flex;
+        flex-wrap: wrap;
+    }
+} */

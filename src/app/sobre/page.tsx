@@ -1,9 +1,19 @@
-import Ct from './Ct'
-
-export default function Sobre() {
+import Layout from '@/app/Compoments/Layout/layout/Layout';
+function Sobre() {
     return (
-        <main>
-            <Ct />
-        </main>
+        
+            <div>
+                Teste
+            </div>
+       
     )
 }
+Sobre.getLayout = function getLayout(page: React.ReactNode) {
+    return (
+            <Layout title={"Sobre"}>
+                {page}
+            </Layout>
+        );
+  };
+
+export default Sobre;

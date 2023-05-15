@@ -1,14 +1,16 @@
 import React from "react";
 import '@/app/Compoments/Layout/foot/foot.css'
-import { Col, Row } from "react-bootstrap";
+import Link from 'next/link';
+
 export default function Foot(){
     return(
         <footer className="foot">
             <div className="foot-content">
                 <ul>
-                    <li><a href="/#">Políticas</a></li>
-                    <li><a href="/#">FAQ</a></li>
-                    <li><a href="/#">Sobre</a></li>
+                    <li><Link href="/">Home</Link></li>
+                    <li><Link href="/politicas">Políticas</Link></li>
+                    <li><Link href="/faq">FAQ</Link></li>
+                    <li><Link href="/sobre">Sobre</Link></li>
                 </ul>
             </div>
             <div className="foot-copy">
