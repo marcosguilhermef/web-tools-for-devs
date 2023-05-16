@@ -6,10 +6,10 @@ import '@/app/conversor.css'
 export default function Url(){
 
     const [text, setText] = useState<string>();
-    const [result, setResult] = useState<string | null>("");
+    const [result, setResult] = useState<string>("");
     const URL = '/api/url/ec'
 
-    function configureTextValidation(e: React.FormEvent<HTMLInputElement>){
+    function configureTextValidation(e: any){
         const { value } = e.currentTarget
         setText(value)
     }
@@ -28,7 +28,7 @@ export default function Url(){
                     <Form.Control 
                         as="textarea" 
                         className="form-control-input" 
-                        rows="5"
+                        rows={5}
                         onChange={configureTextValidation}
                         defaultValue=""
                         />
@@ -38,7 +38,7 @@ export default function Url(){
                     <InputGroup.Text className="label-name-input">
                         para URL:
                     </InputGroup.Text>
-                    <Form.Control as="textarea" className="form-control-input" rows="5" value={result} readOnly/>
+                    <Form.Control as="textarea" className="form-control-input" rows={5} value={result} readOnly/>
                 </Form.Group>
 
                 <Button className="w-100 button-color" onClick={makeRequest}>

@@ -2,14 +2,14 @@
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import './navbar.scss'
-
+import Image from 'next/image';
 
 export default function Header() {
   return (
     <header>
         <Navbar expand='lg' className="mb-3 navbar-color" >
           <Container>
-          <img
+          <Image
               alt=""
               src="/logob.png"
               width="75"

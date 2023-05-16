@@ -5,7 +5,7 @@ export default function Layout({children, title = 'Tools For Devs'}: { children:
     return(
         <html lang="pt-BR">
             <head>
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9766084129238638" crossorigin="anonymous"></script>
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9766084129238638" crossOrigin="anonymous"/>
             </head>
             <body>
             <Header />

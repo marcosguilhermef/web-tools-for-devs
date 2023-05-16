@@ -22,13 +22,14 @@ export default function Home() {
   return (
     <div className="home">
         {
-          data.map( (e) => {
+          data.map( (e,i,a) => {
             return(
               <DivOpt
                 name={e?.name}
                 url={e?.url}
                 url_img={e?.url_img}
                 desc={e?.desc}
+                key={i}
               />
             )
           })

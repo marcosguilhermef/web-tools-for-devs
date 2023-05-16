@@ -9,7 +9,7 @@ export default function Cpf(){
     const [result, setResult] = useState<boolean | null>(null);
     const URL = '/api/cpf/vl'
 
-    function configureCPFValidation(e: React.FormEvent<HTMLInputElement>){
+    function configureCPFValidation(e: any){
         const { value } = e.currentTarget
         setCpf(value)
     }
@@ -30,8 +30,8 @@ export default function Cpf(){
                         className="form-control-input" 
                         onChange={configureCPFValidation}
                         onFocus={() => ( setResult(null) )}
-                        maxLength="11"
-                        isValid={result}
+                        maxLength={11}
+                        isValid={!!result}
                         isInvalid={ result === null ? false : !result }
                     />
                     <Form.Control.Feedback type="invalid">

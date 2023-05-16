@@ -6,10 +6,10 @@ import '@/app/conversor.css'
 export default function Base64(){
 
     const [text, setText] = useState<string>();
-    const [result, setResult] = useState<boolean | null>(null);
+    const [result, setResult] = useState<string>("");
     const URL = '/api/base64/dc'
 
-    function configureTextValidation(e: React.FormEvent<HTMLInputElement>){
+    function configureTextValidation(e: any){
         const { value } = e.currentTarget
         setText(value)
     }
@@ -29,7 +29,7 @@ export default function Base64(){
                     <Form.Control 
                         as="textarea" 
                         className="form-control-input" 
-                        rows="5"
+                        rows={5}
                         onChange={configureTextValidation}
                         />
                 </Form.Group>
@@ -38,7 +38,7 @@ export default function Base64(){
                     <InputGroup.Text className="label-name-input">
                         para Texto:
                     </InputGroup.Text>
-                    <Form.Control as="textarea" className="form-control-input" rows="5" value={result} readOnly/>
+                    <Form.Control as="textarea" className="form-control-input" rows={5} value={result} readOnly/>
                 </Form.Group>
 
                 <Button className="w-100 button-color" onClick={makeRequest}>

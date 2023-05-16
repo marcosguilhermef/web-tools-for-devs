@@ -6,10 +6,10 @@ import '@/app/conversor.css'
 export default function MD5(){
 
     const [text, setText] = useState<string>();
-    const [result, setResult] = useState<boolean | null>(null);
+    const [result, setResult] = useState<string>("");
     const URL = '/api/md5/ec'
 
-    function configureTextValidation(e: React.FormEvent<HTMLInputElement>){
+    function configureTextValidation(e: any){
         const { value } = e.currentTarget
         setText(value)
     }
@@ -26,14 +26,14 @@ export default function MD5(){
                     <InputGroup.Text className="label-name-input">
                         de Texto:
                     </InputGroup.Text>
-                    <Form.Control as="textarea" className="form-control-input" rows="5" onChange={configureTextValidation}/>
+                    <Form.Control as="textarea" className="form-control-input" rows={5} onChange={configureTextValidation}/>
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <InputGroup.Text className="label-name-input">
                         para MD5:
                     </InputGroup.Text>
-                    <Form.Control as="textarea" className="form-control-input" rows="5" value={result} readOnly/>
+                    <Form.Control as="textarea" className="form-control-input" rows={5} value={result} readOnly/>
                 </Form.Group>
 
                 <Button className="w-100 button-color" type="submit" onClick={makeRequest}>
