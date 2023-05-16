@@ -2,11 +2,18 @@ import Sha512 from "./sha512";
 import { Metadata } from "next"; 
 
 export const metadata: Metadata = {
-    title: 'Converter para MD5 | Toos For Dev',
-    description: "Ferramenta que permite converter textos para o formato MD5.",
+    title: 'Gerador de Hash SHA512 para Texto - ToolsForDev.com.br',
+    description: "Esta ferramenta online permite converter texto em um hash SHA512, que é um algoritmo de criptografia robusto e altamente seguro. Com a conversão para SHA512, você pode proteger senhas e informações confidenciais de maneira avançada. Simplifique o processo de geração de hashes SHA512 com esta ferramenta eficiente.",
     openGraph: {
-       "title": "Converter para MD5 | Toos For Dev",
-       "description": "Ferramenta que permite converter textos para o formato MD5.",
+       "title": "Gerador de Hash SHA512 para Texto - ToolsForDev.com.br",
+       "description": "Esta ferramenta online permite converter texto em um hash SHA512, que é um algoritmo de criptografia robusto e altamente seguro. Com a conversão para SHA512, você pode proteger senhas e informações confidenciais de maneira avançada. Simplifique o processo de geração de hashes SHA512 com esta ferramenta eficiente.",
+       url: 'https://toolsfordevs.com.br',
+       images: [
+           {
+              url: "https://toolsfordevs.com.br/sha512.png",
+           }
+       ]
+
     }
 };
 

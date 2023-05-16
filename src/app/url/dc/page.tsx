@@ -1,11 +1,18 @@
 import Url from "./url";
 import { Metadata } from "next";
 export const metadata: Metadata = {
-    title: 'Converter para Texto | Toos For Dev',
-    description: "Ferramenta que permite converter de URL para o formato Texto.",
+    title: 'Decodificador de Texto de Formato URL - ToolsForDev.com.br',
+    description: "Com esta prática ferramenta online, você pode converter facilmente texto que está no formato URL de volta para o formato normal. Ao reverter a codificação URL, você pode obter o texto original e utilizá-lo de forma adequada. Simplifique o processo de decodificação de URLs com esta ferramenta confiável.",
     openGraph: {
-       "title": "Converter para URL | Toos For Dev",
-       "description": "Ferramenta que permite converter de URL para o formato Texto.",
+       "title": "Decodificador de Texto de Formato URL - ToolsForDev.com.br",
+       "description": "Com esta prática ferramenta online, você pode converter facilmente texto que está no formato URL de volta para o formato normal. Ao reverter a codificação URL, você pode obter o texto original e utilizá-lo de forma adequada. Simplifique o processo de decodificação de URLs com esta ferramenta confiável.",
+       url: 'https://toolsfordevs.com.br',
+       images: [
+           {
+              url: "https://toolsfordevs.com.br/url.png",
+           }
+       ]
+
     }
 };
 

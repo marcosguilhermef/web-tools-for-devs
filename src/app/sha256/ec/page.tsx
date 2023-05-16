@@ -2,11 +2,18 @@ import Sha256 from "./sha256";
 import { Metadata } from "next"; 
 
 export const metadata: Metadata = {
-    title: 'Converter para MD5 | Toos For Dev',
-    description: "Ferramenta que permite converter textos para o formato MD5.",
+    title: 'Gerador de Hash SHA256 para Texto - ToolsForDev.com.br',
+    description: "Aumente a segurança das suas informações com esta ferramenta online de conversão de texto para SHA256. O SHA256 é um algoritmo de criptografia amplamente utilizado para proteção de dados sensíveis. Com apenas alguns cliques, você pode gerar hashes SHA256 confiáveis e reforçar a segurança dos seus dados.",
     openGraph: {
-       "title": "Converter para MD5 | Toos For Dev",
-       "description": "Ferramenta que permite converter textos para o formato MD5.",
+       "title": "Gerador de Hash SHA256 para Texto - ToolsForDev.com.br",
+       "description": "Aumente a segurança das suas informações com esta ferramenta online de conversão de texto para SHA256. O SHA256 é um algoritmo de criptografia amplamente utilizado para proteção de dados sensíveis. Com apenas alguns cliques, você pode gerar hashes SHA256 confiáveis e reforçar a segurança dos seus dados.",
+       url: 'https://toolsfordevs.com.br',
+       images: [
+           {
+              url: "https://toolsfordevs.com.br/sha256.png",
+           }
+       ]
+
     }
 };
 export default function Page(){
