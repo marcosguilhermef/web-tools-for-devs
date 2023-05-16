@@ -15,7 +15,7 @@ export default function Foot(){
             </div>
             <div className="foot-copy">
                 <span>
-                    © Copyrigth 2023 - Todos os direitos reservados.  
+                    © Copyright 2023 - Todos os direitos reservados.  
                 </span>
             </div>
         </footer>

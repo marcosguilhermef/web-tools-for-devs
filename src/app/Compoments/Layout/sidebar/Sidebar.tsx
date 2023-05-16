@@ -1,3 +1,4 @@
+'use client'
 import React, { useEffect, useState } from "react";
 import '@/app/Compoments/Layout/sidebar/sidebar.css'
 import Item from "./item";
@@ -10,8 +11,8 @@ export default function Sidebar({props}: { props: any }) {
     const Itens = [ 
         { url: "", name: "Codificadores", type: "categoria" },
         { url: "/url/ec", name: "De Texto para URL", type: "" },
-        { url: "/base64/ec", name: "De Texto para Base64", type: "" },
         { url: "/url/dc", name: "De URL para Texto", type: "" },
+        { url: "/base64/ec", name: "De Texto para Base64", type: "" },
         { url: "/base64/dc", name: "De Base64 para Texto", type: "" },
         { url: "", name: "Validadores", type: "categoria" },
         { url: "/cpf", name: "Validar CPF", type: "" },
@@ -56,7 +57,7 @@ export default function Sidebar({props}: { props: any }) {
                 <ul className="list-sidebar">
                     {
                         Itens.map( (e) =>{
-                            return( <Item props={e}/> )
+                            return( <Item props={e} key={e.name}/> )
                         })
                     }
                 </ul>
@@ -66,7 +67,7 @@ export default function Sidebar({props}: { props: any }) {
                 <ul className="list-sidebar">
                     {
                         Itens.map( (e) =>{
-                            return( <Item props={e}/> )
+                            return( <Item key={e.name} props={e}/> )
                         })
                     }
                 </ul>

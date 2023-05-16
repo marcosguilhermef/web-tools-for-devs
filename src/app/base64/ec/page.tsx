@@ -1,49 +1,17 @@
-'use client'
-import { useState } from "react";
-import Fetch from "@/app/util/Fetch";
-import { Form, Button, InputGroup } from "react-bootstrap";
-import '@/app/conversor.css'
+import Base64 from "./base64";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: 'Converter de base64 para Texto | Toos For Dev',
+    description: "Ferramenta que permite converter Texto para base64.",
+    openGraph: {
+       "title": "Validador de CPF | Toos For Dev",
+       "description": "Ferramenta que permite converter Texto para base64.",
+    }
+};
+
 export default function Page(){
-
-    const [text, setText] = useState<string>();
-    const [result, setResult] = useState<boolean | null>(null);
-    const URL = '/api/base64/ec'
-
-    function configureTextValidation(e: React.FormEvent<HTMLInputElement>){
-        const { value } = e.currentTarget
-        setText(value)
-    }
-
-    async function makeRequest(){
-        const fetch = await new Fetch(`${URL}/${text}`,{},Fetch.GET).doFetch();
-        setResult(fetch.data)
-    }
-
-
     return(
-        <div>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <InputGroup.Text className="label-name-input">
-                        de Texto:
-                    </InputGroup.Text>
-                    <Form.Control 
-                        as="textarea" 
-                        className="form-control-input" 
-                        rows="5"
-                        onChange={configureTextValidation}
-                        />
-                </Form.Group>
-
-                <Form.Group className="mb-3" >
-                    <InputGroup.Text className="label-name-input">
-                        para Base64:
-                    </InputGroup.Text>
-                    <Form.Control as="textarea" className="form-control-input" rows="5" value={result}/>
-                </Form.Group>
-
-                <Button className="w-100 button-color" onClick={makeRequest}>
-                    Converter
-                </Button>
-        </div>
-    );
+        <Base64/>
+    )
 }
