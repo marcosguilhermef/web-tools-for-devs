@@ -1,15 +1,16 @@
 export default class Fetch{
     private url: string;
-    private data: Object = {};
+    private data: Object | null = {};
     private method: number;
     public static readonly GET = 1; 
     public static readonly POST = 2; 
 
-    constructor( url: string, data: Object = {}, method:number ){
+    constructor( url: string, data: Object | null = {}, method:number ){
         this.url = url;
         this.data = data;
         this.method = method;
     }
+
 
 
     public async doFetch(){

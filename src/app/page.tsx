@@ -17,6 +17,8 @@ export default function Home() {
 
     { "name": "CPF","url_img": "/cpf.png", "url": "/cpf", "desc": "Valide o número de algum CPF." },
 
+    { "name": "CEP","url_img": "/localizacao.png", "url": "/cep", "desc": "Consulte e valide números de CEP de todo o Brasil." },
+
   ]
 
   return (

@@ -20,6 +20,9 @@ export default function Sidebar({props}: { props: any }) {
         { url: "/md5/ec", name: "MD5", type: "" },
         { url: "/sha256/ec", name: "SHA256", type: "" },
         { url: "/sha512/ec", name: "SHA512", type: "" },
+        { url: "", name: "Consultas", type: "categoria" },
+        { url: "/cep", name: "Consultar CEP", type: "" },
+
     ]
 
     function showOptions(){
