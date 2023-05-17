@@ -5,7 +5,7 @@ import Fetch from "@/app/util/Fetch";
 import React, { useState } from "react";
 import Cep from "./type";
 import "./cep.css"
-export default function cep(){
+export default function CEP(){
     const [cep, setCep] = useState<string>();
     const [result, setResult] = useState<Cep |null >(null);
     const [ erro, setErro ] = useState<boolean | null >(null)
