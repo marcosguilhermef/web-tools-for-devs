@@ -19,6 +19,8 @@ export const metadata: Metadata = {
 
 export default function Page(){
     return(
-        <Base64/>
+        <>
+            <Base64/>
+        </>
     )
 }

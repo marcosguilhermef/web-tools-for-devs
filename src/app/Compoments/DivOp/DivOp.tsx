@@ -8,7 +8,12 @@ export default function DivOpt({ name , url, desc, url_img }: { name:string , ur
     return(
         <div className="divopt-root" onClick={() => redirect()}>
             <div className="divopt-img">
-                <Image src={url_img} alt="tool"/>
+                <Image 
+                    src={url_img} 
+                    alt="tool"
+                    width={50}
+                    height={50}
+                />
                 <span>{ name }</span>
             </div>
             <div className="divopt-descript">
