@@ -21,6 +21,7 @@
     "eslint-config-next": "13.4.1",
     "fortawesome": "^0.0.1-security",
     "next": "13.4.1",
+    "next-build-id": "^3.0.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.4",
     "react-dom": "^18.2.0",
