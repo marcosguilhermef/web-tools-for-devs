@@ -4,6 +4,7 @@ import '@/app/Compoments/Layout/sidebar/sidebar.css'
 import Item from "./item";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
+import onclick from "./type";
 export default function Sidebar({props}: { props: any }) {
 
     const [show, setShow] = useState<boolean>(false)
@@ -26,12 +27,16 @@ export default function Sidebar({props}: { props: any }) {
     ]
 
     function showOptions(){
-        setShow(!show)
+        setShow(true)
+    }
+    
+    const closeOptins : onclick  = () =>{
+        setShow(false)
     }
 
     useEffect( () => {
         function resize(){
-            setShow(false)
+            closeOptins();
         }
         window.addEventListener('resize', resize)
     } )
@@ -53,14 +58,14 @@ export default function Sidebar({props}: { props: any }) {
                 <FontAwesomeIcon 
                     size="1x" 
                     icon={faClose} 
-                    onClick={showOptions} />
+                    onClick={closeOptins} />
             </div>
 
             <div className={'sidebar'}>                
                 <ul className="list-sidebar">
                     {
                         Itens.map( (e) =>{
-                            return( <Item props={e} key={e.name}/> )
+                            return( <Item key={e.name} props={e}/> )
                         })
                     }
                 </ul>
@@ -70,7 +75,8 @@ export default function Sidebar({props}: { props: any }) {
                 <ul className="list-sidebar">
                     {
                         Itens.map( (e) =>{
-                            return( <Item key={e.name} props={e}/> )
+                            return( <Item props={e} key={e.name} close={closeOptins}/> )
+
                         })
                     }
                 </ul>
