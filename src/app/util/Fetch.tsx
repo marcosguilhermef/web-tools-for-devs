@@ -7,7 +7,6 @@ export default class Fetch{
     public static readonly POST = 2; 
 
     constructor( url: string, data: Object | null = {}, method:number, head?: Headers ){
-        console.log(url)
         this.url = url;
         this.data = data;
         this.method = method;
@@ -26,7 +25,6 @@ export default class Fetch{
             }
         );
         
-        console.log("--------------------------------------------------------------------------------[",rq.status)
 
         if(rq.ok){
             let j = rq.json()

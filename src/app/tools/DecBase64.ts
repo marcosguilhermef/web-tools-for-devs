@@ -1,4 +1,4 @@
-export class DecBase64 implements ToolInterface{
+export class DecBase64 implements ToolInterface<String>{
 
     parameter: string;
     role: string = 'decodificador'

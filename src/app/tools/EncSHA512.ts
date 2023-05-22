@@ -1,6 +1,6 @@
 var crypto = require('crypto');
 
-export class EncSHA512 implements ToolInterface{
+export class EncSHA512 implements ToolInterface<String>{
 
     parameter: string;
     role: string = 'codificador'

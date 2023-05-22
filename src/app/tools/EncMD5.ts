@@ -1,6 +1,6 @@
 var crypto = require('crypto');
 
-export class EncMD5 implements ToolInterface{
+export class EncMD5 implements ToolInterface<String>{
 
     parameter: string;
     role: string = 'codificador'

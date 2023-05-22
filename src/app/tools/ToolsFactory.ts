@@ -1,6 +1,6 @@
-export class ToolsFactory{
+export class ToolsFactory<T>{
 
-    public static factory( tool : ToolInterface, param: any = null){
+    public factory( tool : ToolInterface<T>, param: any = null){
         return tool.execute();
     }
 }

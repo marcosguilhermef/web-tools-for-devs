@@ -1,4 +1,4 @@
-export class EncBase64 implements ToolInterface{
+export class EncBase64 implements ToolInterface<String>{
 
     parameter: string;
     role: string = 'codificador'

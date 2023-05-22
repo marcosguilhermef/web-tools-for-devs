@@ -6,7 +6,6 @@ export default function Item({ props, close}: { props: any, close?: onclick | nu
     const { name, url, type } : { name: string, url: string, type: string} = {...props}
 
     function closeSidebar(){
-        console.log(close)
         if(close !== null && close !== undefined){
             close()
         }

@@ -1,4 +1,4 @@
-export class ValidateCPF implements ToolInterface{
+export class ValidateCPF implements ToolInterface<String>{
     parameter: string;
     role: string = 'validador'
 

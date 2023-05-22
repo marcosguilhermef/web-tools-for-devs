@@ -1,4 +1,4 @@
-export class EncURL implements ToolInterface{
+export class EncURL implements ToolInterface<String>{
 
     parameter: string;
     role: string = 'codificador'

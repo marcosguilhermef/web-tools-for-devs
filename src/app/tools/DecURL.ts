@@ -1,4 +1,4 @@
-export class DecURL implements ToolInterface{
+export class DecURL implements ToolInterface<String>{
 
     parameter: string;
     role: string = 'decodificador'
