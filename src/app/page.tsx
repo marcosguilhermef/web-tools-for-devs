@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: 'Ferramentas Online para Desenvolvedores - ToolsForDevs.com.br',
   description: "Descubra uma coleção de ferramentas versáteis para uso geral ou desenvolvedores. Converta texto para Base64, URLs ou aplique algoritmos de criptografia como MD5, SHA256, SHA512, e muito mais. Simplifique suas tarefas com nossas práticas e eficientes ferramentas online. Otimize seu fluxo de trabalho e alcance resultados excepcionais. Acesse agora e aproveite as funcionalidades do nosso site de ferramentas para facilitar suas atividades diárias ou projetos de desenvolvimento. Experimente hoje e simplifique suas tarefas com eficácia e praticidade.",
   openGraph: {
-      title: "Gerador de Hash MD5 para Texto - ToolsForDev.com.br",
+      title: 'Ferramentas Online para Desenvolvedores - ToolsForDevs.com.br',
       description: "Descubra uma coleção de ferramentas versáteis para uso geral ou desenvolvedores. Converta texto para Base64, URLs ou aplique algoritmos de criptografia como MD5, SHA256, SHA512, e muito mais. Simplifique suas tarefas com nossas práticas e eficientes ferramentas online. Otimize seu fluxo de trabalho e alcance resultados excepcionais. Acesse agora e aproveite as funcionalidades do nosso site de ferramentas para facilitar suas atividades diárias ou projetos de desenvolvimento. Experimente hoje e simplifique suas tarefas com eficácia e praticidade.",
       url: 'https://toolsfordevs.com.br',
       siteName: "Tools for dev",
