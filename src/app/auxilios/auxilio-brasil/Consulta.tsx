@@ -92,7 +92,7 @@ export default function Consulta(){
 
                 {
                     result?.map( (e) => (
-                            <div className="resultato-query">
+                            <div key={e.id} className="resultato-query">
                                 <div><span>Nome: </span> { e?.beneficiarioAuxilioBrasil.nome }</div>     
                                 <div><span>id: </span> { e?.id }</div>  
                                 <div><span>NIS: </span> { e?.beneficiarioAuxilioBrasil.nis }</div> 
