@@ -23,6 +23,7 @@ export default function Sidebar({props}: { props: any }) {
         { url: "/sha512/ec", name: "SHA512", type: "" },
         { url: "", name: "Consultas", type: "categoria" },
         { url: "/cep", name: "Consultar CEP", type: "" },
+        { url: "/auxilios/auxilio-brasil", name: "Consultar Auxílio Brasil", type: "" }
 
     ]
 

@@ -2,13 +2,16 @@ export default class Fetch{
     private url: string;
     private data: Object | null = {};
     private method: number;
+    private head?: Headers;
     public static readonly GET = 1; 
     public static readonly POST = 2; 
 
-    constructor( url: string, data: Object | null = {}, method:number ){
+    constructor( url: string, data: Object | null = {}, method:number, head?: Headers ){
+        console.log(url)
         this.url = url;
         this.data = data;
         this.method = method;
+        this.head = head;
     }
 
 
@@ -18,13 +21,16 @@ export default class Fetch{
             this.url,
             {
                 'method': this.whoIsMethod(),
-                'body': this.method == Fetch.POST ? JSON.stringify(this.data) : null
+                'body': this.method == Fetch.POST ? JSON.stringify(this.data) : null,
+                'headers' : this.head
             }
         );
-
+        
+        console.log("--------------------------------------------------------------------------------[",rq.status)
 
         if(rq.ok){
-            return rq.json()
+            let j = rq.json()
+            return j
         }else{
             return null;
         }

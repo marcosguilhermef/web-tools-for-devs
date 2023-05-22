@@ -1,6 +1,6 @@
-interface ToolInterface{
-    parameter?: string;
-    role: string;
+interface ToolInterface<T>{
+    parameter?: T | string;
+    role: T | string;
     execute(): any;
-    setParameters(param : string) : any;
+    setParameters(param : string | T) : any;
 }

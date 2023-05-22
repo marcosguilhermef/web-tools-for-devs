@@ -4,7 +4,6 @@ import '@/app/conversor.css'
 import Fetch from "@/app/util/Fetch";
 import React, { useState } from "react";
 import Cep from "./type";
-import "./cep.css"
 export default function CEP(){
     const [cep, setCep] = useState<string>();
     const [result, setResult] = useState<Cep |null >(null);
@@ -59,7 +58,7 @@ export default function CEP(){
                     Validar 
                 </Button>
 
-                <div hidden={!result} className="cep-resultato">
+                <div hidden={!result} className="resultato-query">
                     <div><span>cep: </span> { result?.cep }</div>   
                     <div><span>logradouro: </span> { result?.logradouro }</div> 
                     <div><span>complemento: </span> { result?.complemento }</div>   
