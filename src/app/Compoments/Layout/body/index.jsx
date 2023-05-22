@@ -7,7 +7,7 @@ export default function Body({children}) {
         
         <main className="main-root">
                 <Sidebar />
-                <div className="my-5 container-root">
+                <div className="mt-5 container-root">
                     { children }
                 </div>
         </main>

@@ -1,7 +1,6 @@
 .foot{
     background-color: #303030;
-    position: absolute;
-    bottom: 0;
+    position: relative;
     width: 100%;
 }
 
