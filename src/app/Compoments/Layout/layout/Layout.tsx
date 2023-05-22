@@ -1,11 +1,7 @@
 import Header from "@/app/Compoments/Layout/header";
 import Foot from '@/app/Compoments/Layout/foot'
 import Body from '@/app/Compoments/Layout/body'
-import ga4 from "react-ga4";
-export default function Layout({children, title = 'Tools For Devs'}: { children: React.ReactNode, title:string}) {
-
-    ga4.initialize("G-C6W5KW8XSJ")
-
+export default function Layout({children}: { children: React.ReactNode, title?:string}) {
 
     return(
         <html lang="pt-BR">

@@ -3,7 +3,16 @@ import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import './navbar.scss'
 import Image from 'next/image';
+import ga4 from "react-ga4";
+import { useEffect } from 'react';
 export default function Header() {
+  ga4.initialize("G-C6W5KW8XSJ")
+
+
+  useEffect( () => {
+    ga4.send({ hitType: "pageview", page: window.location.href});
+
+  })
 
   return (
     <header>
