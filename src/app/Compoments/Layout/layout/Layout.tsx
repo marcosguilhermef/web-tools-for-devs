@@ -1,7 +1,7 @@
 import Header from "@/app/Compoments/Layout/header";
 import Foot from '@/app/Compoments/Layout/foot'
 import Body from '@/app/Compoments/Layout/body'
-export default function Layout({children,}: { children: React.ReactNode,}) {
+export default function Layout({children,}: { children: React.ReactNode, title?:string}) {
 
     return(
         <html lang="pt-BR">
