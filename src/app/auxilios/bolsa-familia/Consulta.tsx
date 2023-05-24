@@ -63,7 +63,7 @@ export default function Consulta(){
                             Mês de referência:
                         </InputGroup.Text>
                         <Form.Control 
-                            type="date" 
+                            type="month" 
                             className="form-control-input" 
                             onChange={configureDateValidation}
                             onFocus={() => ( setResult(undefined) )}

@@ -18,9 +18,11 @@ export default function Item({ props, close}: { props: any, close?: onclick | nu
         )
     }else{
         return(
-            <Link href={url || ""} onClick={closeSidebar}>
-                <li className="item-sidebar">{ name }</li>
-            </Link>
+            <li className="item-sidebar">
+                <Link href={url || ""} onClick={closeSidebar}>
+                    { name }
+                </Link>
+            </li>
         )
     }
 
