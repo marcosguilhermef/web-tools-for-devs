@@ -3,6 +3,9 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 export const metadata: Metadata = {
   title: 'Sobre',
+  alternates: { 
+    canonical:"https://toolsfordevs.com.br/sobre"
+},
 };
 function Sobre() { 
     return (

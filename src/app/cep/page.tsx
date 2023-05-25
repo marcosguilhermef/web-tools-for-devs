@@ -4,6 +4,9 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
     title: 'Consultar CEP - ToolsForDev.com.br',
     description: "Consulte e valida números de CEP de todas as regiões do Brasil de forma rápida em simples.",
+    alternates: { 
+        canonical:"https://toolsfordevs.com.br/cep"
+    },
     openGraph: {
         title: "Consultar CEP - ToolsForDev.com.br",
         description: "Consulte e valida números de CEP de todas as regiões do Brasil de forma rápida em simples.",
