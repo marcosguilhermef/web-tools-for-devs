@@ -48,19 +48,19 @@ export default function Url() {
             </Button>
 
             <Articles title={"O que é formato de texto URL (percent code, ou codificação porcentagem)?"}>
-                <p>O percent code, também conhecido como percent encoding ou URL encoding, é um método utilizado para representar caracteres especiais, espaços e caracteres não-ASCII em uma URL. Essa codificação é feita substituindo o caractere original por uma sequência de caracteres que começa com "%" seguido de códigos hexadecimais.</p>
+                <p>{'O percent code, também conhecido como percent encoding ou URL encoding, é um método utilizado para representar caracteres especiais, espaços e caracteres não-ASCII em uma URL. Essa codificação é feita substituindo o caractere original por uma sequência de caracteres que começa com "%" seguido de códigos hexadecimais.'}</p>
 
-                <p>Por exemplo, o espaço em branco, que normalmente seria representado por um espaço vazio, é substituído por "%20". Outros caracteres especiais têm suas representações específicas, como "%26" para "&", "%3F" para "?", e assim por diante.</p>
+                <p>{'Por exemplo, o espaço em branco, que normalmente seria representado por um espaço vazio, é substituído por "%20". Outros caracteres especiais têm suas representações específicas, como "%26" para "&", "%3F" para "?", e assim por diante.'}</p>
 
-                <p>O percent code é importante para garantir a correta transmissão de caracteres em uma URL. Isso ocorre porque certos caracteres, como espaços e símbolos, podem ter significados especiais em uma URL e podem causar problemas de interpretação ou conflitos com a sintaxe da URL.</p>
+                <p>{'O percent code é importante para garantir a correta transmissão de caracteres em uma URL. Isso ocorre porque certos caracteres, como espaços e símbolos, podem ter significados especiais em uma URL e podem causar problemas de interpretação ou conflitos com a sintaxe da URL.'}</p>
 
-                <p>Ao utilizar o percent encoding, os caracteres problemáticos são codificados de forma padronizada, permitindo que sejam transmitidos com segurança. Por exemplo, um URL contendo espaços é codificado como "%20" para que seja corretamente interpretado pelos navegadores e servidores.</p>
+                <p>{'Ao utilizar o percent encoding, os caracteres problemáticos são codificados de forma padronizada, permitindo que sejam transmitidos com segurança. Por exemplo, um URL contendo espaços é codificado como "%20" para que seja corretamente interpretado pelos navegadores e servidores.'}</p>
 
-                <p>Em resumo, o percent code é uma forma de codificação utilizada em URLs para substituir caracteres especiais, espaços e caracteres não-ASCII por sequências padronizadas de caracteres hexadecimais, garantindo a correta transmissão e interpretação desses caracteres na web.</p>
+                <p>{'Em resumo, o percent code é uma forma de codificação utilizada em URLs para substituir caracteres especiais, espaços e caracteres não-ASCII por sequências padronizadas de caracteres hexadecimais, garantindo a correta transmissão e interpretação desses caracteres na web.'}</p>
             </Articles>
 
             <Articles title={"O que é faz o URL encode (codificador)?"}>
-                <p>O URL encode tem o objetivo de converter uma URL no formato texto para o formato de URL legível.</p>
+                <p>{'O URL encode tem o objetivo de converter uma URL no formato texto para o formato de URL legível.'}</p>
             </Articles>
 
         </div>
