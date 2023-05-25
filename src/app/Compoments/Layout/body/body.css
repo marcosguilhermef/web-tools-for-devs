@@ -1,6 +1,7 @@
 .main-root{
     display: flex;
     margin-right: 2rem;
+    min-height: 100vh;
 }
 .container-root{
     width: 100%;

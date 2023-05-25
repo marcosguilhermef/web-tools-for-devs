@@ -9,7 +9,6 @@ export default function Foot(){
                 <ul>
                     <li><Link href="/">Home</Link></li>
                     <li><Link href="/politicas">Políticas</Link></li>
-                    <li><Link href="/faq">FAQ</Link></li>
                     <li><Link href="/sobre">Sobre</Link></li>
                 </ul>
             </div>

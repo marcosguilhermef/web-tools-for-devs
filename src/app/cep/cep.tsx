@@ -4,6 +4,8 @@ import '@/app/conversor.css'
 import Fetch from "@/app/util/Fetch";
 import React, { useState } from "react";
 import Cep from "./type";
+import Articles from '@/app/Compoments/Articles'
+
 export default function CEP(){
     const [cep, setCep] = useState<string>();
     const [result, setResult] = useState<Cep |null >(null);
@@ -70,6 +72,15 @@ export default function CEP(){
                     <div><span>ddd: </span> { result?.ddd }</div>   
                     <div><span>siafi: </span> { result?.siafi }</div>   
                 </div>
+
+
+                <Articles title={"O que é o CEP (código de endereçamento fiscal)?"}>
+                    <p>O CEP (Código de Endereçamento Postal) é um sistema de codificação numérica utilizado no Brasil para identificar e facilitar a localização de endereços. Composto por oito dígitos, o CEP está associado a uma rua, bairro, cidade e estado específicos. O CEP desempenha um papel crucial na eficiência dos serviços postais, permitindo a classificação e distribuição adequada de correspondências e encomendas. Ao fornecer um CEP correto, facilitamos o processo de entrega e garantimos que nossas correspondências sejam encaminhadas corretamente. É possível encontrar o CEP de um determinado endereço consultando serviços online ou utilizando ferramentas disponibilizadas pelos Correios.</p>
+                </Articles>
+
+                <Articles title={"Como consultar O CEP?"}>
+                    <p>Preencha o número do CEP para verificar o endereço.</p>
+                </Articles>
 
         </div>
     );
