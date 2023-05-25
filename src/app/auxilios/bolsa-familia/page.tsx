@@ -20,7 +20,7 @@ export default function Page(){
 
     return(
         <>
-            <Consulta/>
+            <Consulta h1={'Consultar Bolsa Família'}/>
         </>
     );
 }

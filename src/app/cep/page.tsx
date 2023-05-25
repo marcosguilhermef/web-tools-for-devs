@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 export default function Page(){
     return(
         <>
-            <CEP/>
+            <CEP  h1={'Consultar CEP'}/>
         </>
     )
 } 

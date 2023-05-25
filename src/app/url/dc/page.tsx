@@ -22,7 +22,7 @@ export default function Page(){
 
     return(
         <>
-            <Url/>
+            <Url h1={'Decodificador de Texto de Formato URL'}/>
         </>
     );
 }

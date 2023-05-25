@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 export default function Page(){
     return(
         <>
-            <MD5/>
+            <MD5 h1={'Gerar hash md5'}/>
         </>
     )
 } 

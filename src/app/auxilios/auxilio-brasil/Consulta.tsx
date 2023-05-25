@@ -6,7 +6,7 @@ import '@/app/conversor.css'
 import { auxilioType } from "./auxilio-type";
 import Articles from '@/app/Compoments/Articles'
 
-export default function Consulta() {
+export default function Consulta({h1}:{h1?:string}) {
     const [cpf, setCpf] = useState<string>();
     const [date, setDate] = useState<Date>(new Date);
     const [result, setResult] = useState<auxilioType[]>();
@@ -35,6 +35,7 @@ export default function Consulta() {
 
     return (
         <div>
+            <h1 className="text-title">{h1}</h1>
             <Form.Group className="mb-3" controlId="formBasicEmail">
                 <InputGroup.Text className="label-name-input">
                     CPF ou NIS:

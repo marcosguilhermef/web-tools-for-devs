@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 export default function Page(){
     return(
         <>
-            <Sha256/>
+            <Sha256 h1={"Gerador de Hash SHA256 para Texto"}/>
         </>
     )
 }

@@ -5,7 +5,7 @@ import { Form, Button, InputGroup } from "react-bootstrap";
 import '@/app/conversor.css'
 import Articles from '@/app/Compoments/Articles'
 
-export default function Base64(){
+export default function Base64({h1}:{h1?:string}){
 
     const [text, setText] = useState<string>();
     const [result, setResult] = useState<string>("");
@@ -24,6 +24,7 @@ export default function Base64(){
 
     return(
         <div>
+                <h1 className="text-title">{ h1 }</h1>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <InputGroup.Text className="label-name-input">
                         de Texto:

@@ -22,7 +22,7 @@ export default function Page(){
 
     return(
         <>
-            <Base64/>
+            <Base64 h1={'Decodificador de Base64 para Texto'}/>
         </>
     )
 }

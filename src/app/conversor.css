@@ -23,3 +23,8 @@
 .resultato-query span{
     font-weight: bold;
 }
+
+.text-title{
+    font-size: 2rem;
+    margin-bottom: 5rem;
+}

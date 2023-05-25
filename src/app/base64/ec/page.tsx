@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 export default function Page(){
     return(
         <>
-            <Base64/>
+            <Base64 h1={'Codificador de texto para Base64'}/>
         </>
     )
 }
