@@ -16,7 +16,8 @@ export const metadata: Metadata = {
             {
                url: "https://toolsfordevs.com.br/md5.png",
             }
-        ]
+        ],
+        type: "website"
     }
   };
 

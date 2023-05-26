@@ -15,7 +15,8 @@ export const metadata: Metadata = {
             {
                url: "https://toolsfordevs.com.br/bolsa_familia.png",
             }
-        ]
+        ],
+        type: "website"
      }
    };
 
