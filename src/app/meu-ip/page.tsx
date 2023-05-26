@@ -8,7 +8,7 @@ export const metadata: Metadata = {
         canonical:"https://toolsfordevs.com.br/meu-ip"
     },
     openGraph: {
-        title: "Gerador de Hash MD5 para Texto - ToolsForDev.com.br",
+        title: "Meu ip - ToolsForDev.com.br",
         description: "Descubra o seu número de IP com facilidade. Nosso site oferece uma página simples e intuitiva que permite que você consulte seu endereço IP em apenas alguns cliques. Saiba mais sobre sua conexão e verifique seu IP agora mesmo.",
         url: 'https://toolsfordevs.com.br/meu-ip',
         siteName: "Tools for dev",
