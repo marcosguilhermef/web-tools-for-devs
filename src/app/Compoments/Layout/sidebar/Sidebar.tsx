@@ -24,7 +24,9 @@ export default function Sidebar({props}: { props: any }) {
         { url: "", name: "Consultas", type: "categoria" },
         { url: "/cep", name: "Consultar CEP", type: "" },
         { url: "/auxilios/auxilio-brasil", name: "Consultar Auxílio Brasil", type: "" },
-        { url: "/auxilios/bolsa-familia", name: "Consultar Bolsa Família", type: "" }
+        { url: "/auxilios/bolsa-familia", name: "Consultar Bolsa Família", type: "" },
+        { url: "", name: "Rede", type: "categoria" },
+        { url: "/meu-ip", name: "Meu Ip", type: "" }
 
     ]
 

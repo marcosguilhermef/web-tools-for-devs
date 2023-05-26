@@ -6,7 +6,12 @@ import Image from 'next/image';
 import ga4 from "react-ga4";
 import { useEffect } from 'react';
 export default function Header() {
-  ga4.initialize("G-C6W5KW8XSJ")
+  ga4.initialize([{
+    trackingId: "G-C6W5KW8XSJ",
+    gaOptions: {
+      anonymizeIp: false
+    }
+  }])
 
 
   useEffect( () => {

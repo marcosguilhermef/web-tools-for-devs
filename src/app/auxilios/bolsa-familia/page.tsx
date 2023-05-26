@@ -10,6 +10,7 @@ export const metadata: Metadata = {
      openGraph: {
         "title": "Consultar Bolsa Família - ToolsForDev.com.br",
         "description": "Obtenha informações sobre o Bolsa Família de forma rápida e fácil com a ferramenta de consulta do ToolsforDevs. Verifique elegibilidade, valores e histórico do benefício. Acesse agora e simplifique sua busca por dados do Bolsa Família.",
+        url:"https://toolsfordevs.com.br/auxilios/bolsa-familia",
         images: [
             {
                url: "https://toolsfordevs.com.br/bolsa_familia.png",

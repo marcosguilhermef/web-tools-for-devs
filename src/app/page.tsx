@@ -34,7 +34,8 @@ export default function Home() {
     { "name": "CPF","url_img": "/cpf.png", "url": "/cpf", "desc": "Valide o número de algum CPF." },
     { "name": "CEP","url_img": "/localizacao.png", "url": "/cep", "desc": "Consulte e valide números de CEP de todo o Brasil." },
     { "name": "Auxílio Brasil","url_img": "/auxiliobr.png", "url": "/auxilios/auxilio-brasil", "desc": "Consulte parcelas do auxílio brasil pagas de qualquer nis ou cpf." },
-    { "name": "Bolsa Famĺia","url_img": "/bolsa_familia.png", "url": "/auxilios/bolsa-familia", "desc": "Consulte parcelas do bolsa família pagas de qualquer nis ou cpf." },
+    { "name": "Bolsa Família","url_img": "/bolsa_familia.png", "url": "/auxilios/bolsa-familia", "desc": "Consulte parcelas do bolsa família pagas de qualquer nis ou cpf." },
+    { "name": "Meu Ip","url_img": "/ip.png", "url": "/meu-ip", "desc": "Use essa ferramenta para descobrir o seu número de ip." },
 
   ]
 

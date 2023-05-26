@@ -34,6 +34,20 @@ export default class Fetch{
         }
     }
 
+    public async doFetchGetResponse(){
+        let rq = await fetch(
+            this.url,
+            {
+                'method': this.whoIsMethod(),
+                'body': this.method == Fetch.POST ? JSON.stringify(this.data) : null,
+                'headers' : this.head
+            }
+        );
+        
+        return rq
+        
+    }
+
     private whoIsMethod(): string{
         switch(this.method){
             case (Fetch.GET):
