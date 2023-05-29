@@ -5,12 +5,12 @@ export const metadata: Metadata = {
     title: 'SHA3-256 Encrypt - ToolsForDev.com.br',
     description: "Proteja seus dados convertendo-os em um hash de 256 bits com o algoritmo SHA3-256. Garanta a segurança e integridade dos seus dados com facilidade.",
     alternates: { 
-        canonical:"https://toolsfordevs.com.br/sha256/ec"
+        canonical:"https://toolsfordevs.com.br/sha3-256/ec"
     },
     openGraph: {
        "title": "SHA3-256 Encrypt - ToolsForDev.com.br",
        "description": "Proteja seus dados convertendo-os em um hash de 256 bits com o algoritmo SHA3-256. Garanta a segurança e integridade dos seus dados com facilidade.",
-       url: 'https://toolsfordevs.com.br/sha256/ec',
+       url: 'https://toolsfordevs.com.br/sha3-256/ec',
        images: [
            {
               url: "https://toolsfordevs.com.br/sha256.png",

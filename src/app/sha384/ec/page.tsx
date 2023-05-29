@@ -5,12 +5,12 @@ export const metadata: Metadata = {
     title: 'SHA-384 Encrypt - ToolsForDev.com.br',
     description: "Garanta a segurança dos seus dados com o hash SHA-384 de 384 bits. Converta seu texto em uma sequência criptografada e mantenha-os protegidos.",
     alternates: { 
-        canonical:"https://toolsfordevs.com.br/sha256/ec"
+        canonical:"https://toolsfordevs.com.br/sha384/ec"
     },
     openGraph: {
        "title": "SHA-384 Encrypt - ToolsForDev.com.br",
        "description": "Garanta a segurança dos seus dados com o hash SHA-384 de 384 bits. Converta seu texto em uma sequência criptografada e mantenha-os protegidos.",
-       url: 'https://toolsfordevs.com.br/sha256/ec',
+       url: 'https://toolsfordevs.com.br/sha384/ec',
        images: [
            {
               url: "https://toolsfordevs.com.br/sha256.png",
