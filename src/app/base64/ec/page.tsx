@@ -1,6 +1,5 @@
-import Base64 from "./base64";
 import { Metadata } from "next";
-
+import Component from "./Component";
 export const metadata: Metadata = {
     title: 'Codificador de Texto para Base64 - ToolsForDev.com.br',
     description: "Transforme seu texto em uma representação segura e compacta usando a codificação Base64. Com esta ferramenta, você pode converter texto em Base64, que é amplamente utilizado para transmitir e armazenar dados de forma eficiente. Garanta a integridade dos seus dados com esta ferramenta de conversão simples e eficaz.",
@@ -24,7 +23,7 @@ export const metadata: Metadata = {
 export default function Page(){
     return(
         <>
-            <Base64 h1={'Codificador de texto para Base64'}/>
+            <Component/>
         </>
     )
 }

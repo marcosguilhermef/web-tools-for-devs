@@ -4,6 +4,7 @@
     overflow-y: auto;
     padding: .635rem .635rem .635rem 0;
     margin-top: -1rem;
+    border-right: solid 1px rgb(194, 194, 194);
 }
 .root-sidebar h4{
     text-align: center;

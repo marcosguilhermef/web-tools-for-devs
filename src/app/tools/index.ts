@@ -7,6 +7,15 @@ import { ToolsFactory } from "./ToolsFactory";
 import { EncMD5 } from "./EncMD5";
 import { EncSHA256 } from "./EncSHA256"
 import { EncSHA512 } from "./EncSHA512"
+
+import { EncSHA1 } from "./EncSHA1";
+import { EncSHA224 } from "./EncSHA224";
+import { EncSHA384 } from "./EncSHA384";
+import { EncSHA3_224 } from "./EncSHA3_224";
+import { EncSHA3_256 } from "./EncSHA3_256";
+import { EncSHA3_384 } from "./EncSHA3_384";
+import { EncSHA3_512 } from "./EncSHA3_512";
+
 export{ 
     DecBase64,
     EncBase64,
@@ -16,5 +25,13 @@ export{
     ToolsFactory,
     EncMD5,
     EncSHA256,
-    EncSHA512
+    EncSHA512,
+    EncSHA1,
+    EncSHA224,
+    EncSHA384,
+    EncSHA3_224,
+    EncSHA3_256,
+    EncSHA3_384,
+    EncSHA3_512,
 }
+    

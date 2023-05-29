@@ -8,9 +8,15 @@ export const metadata: Metadata = {
         canonical:"https://toolsfordevs.com.br/cpf"
     },
      openGraph: {
-        "title": "Validador de CPF - ToolsForDev.com.br",
+        "title": "Validar de CPF - ToolsForDev.com.br",
         "description": "Ferramenta que permite verificar a validade de um número de CPF.",
         url: "https://toolsfordevs.com.br/cpf",
+        siteName: "Tools for dev",
+        images: [
+            {
+               url: "https://toolsfordevs.com.br/cpf.png",
+            }
+        ],
         type: "website"
      }
    };

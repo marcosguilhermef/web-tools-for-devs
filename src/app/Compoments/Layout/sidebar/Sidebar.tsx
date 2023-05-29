@@ -19,14 +19,25 @@ export default function Sidebar({props}: { props: any }) {
         { url: "/cpf", name: "Validar CPF", type: "" },
         { url: "", name: "Encriptar", type: "categoria" },
         { url: "/md5/ec", name: "MD5", type: "" },
-        { url: "/sha256/ec", name: "SHA256", type: "" },
-        { url: "/sha512/ec", name: "SHA512", type: "" },
+
+        { url: "/sha1/ec", name: "SHA1", type: "" },
+        { url: "/sha224/ec", name: "SHA-224", type: "" },
+        { url: "/sha384/ec", name: "SHA-384", type: "" },
+        { url: "/sha256/ec", name: "SHA-256", type: "" },
+        { url: "/sha512/ec", name: "SHA-512", type: "" },
+        { url: "/sha3-224/ec", name: "SHA3-224", type: "" },
+        { url: "/sha3-256/ec", name: "SHA3-256", type: "" },
+        { url: "/sha3-384/ec", name: "SHA3-384", type: "" },
+        { url: "/sha3-512/ec", name: "SHA3-512", type: "" },
+
         { url: "", name: "Consultas", type: "categoria" },
         { url: "/cep", name: "Consultar CEP", type: "" },
         { url: "/auxilios/auxilio-brasil", name: "Consultar Auxílio Brasil", type: "" },
         { url: "/auxilios/bolsa-familia", name: "Consultar Bolsa Família", type: "" },
+        
         { url: "", name: "Rede", type: "categoria" },
-        { url: "/meu-ip", name: "Meu Ip", type: "" }
+        { url: "/meu-ip", name: "Meu Ip", type: "" },
+        { url: "/meu-navegador", name: "Meu navegador", type: "" }
 
     ]
 

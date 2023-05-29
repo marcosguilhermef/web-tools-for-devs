@@ -1,15 +1,14 @@
-import Sha512 from "./sha512";
 import { Metadata } from "next"; 
-
+import Component from "./Component";
 export const metadata: Metadata = {
-    title: 'Gerador de Hash SHA512 para Texto - ToolsForDev.com.br',
-    description: "Esta ferramenta online permite converter texto em um hash SHA512, que é um algoritmo de criptografia robusto e altamente seguro. Com a conversão para SHA512, você pode proteger senhas e informações confidenciais de maneira avançada. Simplifique o processo de geração de hashes SHA512 com esta ferramenta eficiente.",
+    title: 'SHA-512 Encrypt - ToolsForDev.com.br',
+    description: "Converta seu texto em um hash de 512 bits altamente seguro com o SHA-512. Proteja a integridade dos seus dados com essa ferramenta confiável.",
     alternates: { 
         canonical:"https://toolsfordevs.com.br/sha512/ec"
     },
     openGraph: {
-       "title": "Gerador de Hash SHA512 para Texto - ToolsForDev.com.br",
-       "description": "Esta ferramenta online permite converter texto em um hash SHA512, que é um algoritmo de criptografia robusto e altamente seguro. Com a conversão para SHA512, você pode proteger senhas e informações confidenciais de maneira avançada. Simplifique o processo de geração de hashes SHA512 com esta ferramenta eficiente.",
+       "title": "SHA-512 Encrypt - ToolsForDev.com.br",
+       "description": "Converta seu texto em um hash de 512 bits altamente seguro com o SHA-512. Proteja a integridade dos seus dados com essa ferramenta confiável.",
        url: 'https://toolsfordevs.com.br/sha512/ec',
        images: [
            {
@@ -23,6 +22,6 @@ export const metadata: Metadata = {
 
 export default function Page(){
     return(
-        <Sha512 h1={"Gerador de Hash SHA512 para Texto"}/>
+        <Component/>
     )
 }

@@ -2,14 +2,14 @@ import { Metadata } from "next";
 import Component from "./Component";
 
 export const metadata: Metadata = {
-    title: 'SHA-256 Encrypt - ToolsForDev.com.br',
-    description: " Converta seu texto em um hash criptográfico seguro de 256 bits com o algoritmo SHA-256. Mantenha seus dados protegidos e íntegros.",
+    title: 'SHA3-384 Encrypt - ToolsForDev.com.br',
+    description: "Converta seu texto em um hash criptográfico de 384 bits usando o algoritmo SHA3-384. Mantenha seus dados seguros e protegidos de forma eficiente.",
     alternates: { 
         canonical:"https://toolsfordevs.com.br/sha256/ec"
     },
     openGraph: {
-       "title": "SHA-256 Encrypt - ToolsForDev.com.br",
-       "description": " Converta seu texto em um hash criptográfico seguro de 256 bits com o algoritmo SHA-256. Mantenha seus dados protegidos e íntegros.",
+       "title": "SHA3-384 Encrypt - ToolsForDev.com.br",
+       "description": "Converta seu texto em um hash criptográfico de 384 bits usando o algoritmo SHA3-384. Mantenha seus dados seguros e protegidos de forma eficiente.",
        url: 'https://toolsfordevs.com.br/sha256/ec',
        images: [
            {

@@ -17,7 +17,8 @@ export const metadata: Metadata = {
           {
              url: "https://toolsfordevs.com.br/logo.png",
           }
-      ]
+      ],
+      type: "website",
   }
 };
 

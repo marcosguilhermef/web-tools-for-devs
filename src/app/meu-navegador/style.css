@@ -1,0 +1,10 @@
+.navegador{
+    border: solid 1px black;
+    background-color: springgreen;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.navegador span {
+    font-weight: bold;
+}
