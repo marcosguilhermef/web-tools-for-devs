@@ -7,7 +7,7 @@ export default function Component({ h1 }: { h1?: string }) {
     return (
         <div>
             <Conversor
-                h1="Codificador de texto para Base64"
+                h1="Codificador Base64"
                 url="/api/base64/ec"
                 t1={'de Texto'}
                 t2={'para Base64'}
@@ -24,8 +24,8 @@ export default function Component({ h1 }: { h1?: string }) {
                     <p>{'No entanto, é importante destacar que o Base64 não é uma forma de criptografia, pois a conversão pode ser facilmente revertida, e os dados originais podem ser recuperados. Portanto, ele é adequado para uso em casos em que o objetivo é representar dados binários de forma legível e não para proteção de dados confidenciais.'}</p>
                 </Articles>
 
-                <Articles title={"O que é faz o base64 encode (codificador)?"}>
-                    <p>{'O base64 encoder tem a função de converter um texto para o formato base64'}</p>
+                <Articles title={"O que é faz um decodificador base64 (base64 decode)?"}>
+                    <p>{'Um decodificador base64 é um mecanismo que converte uma sequência de caracteres ASCII em dados binários. Ele é usado para reverter a codificação base64, restaurando os dados originais a partir da representação em formato de texto. O decodificador base64 analisa a sequência de caracteres em blocos de 4 e converte-os de volta em seus equivalentes binários de 3 bytes. Essa funcionalidade é útil para ler e manipular dados que foram previamente codificados em base64, permitindo que sejam usados novamente em seu formato original. O decodificador base64 é amplamente utilizado em várias aplicações, como transferência de dados e armazenamento de informações.'}</p>
                 </Articles>
             </Conversor>
         </div>
