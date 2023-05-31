@@ -20,8 +20,10 @@ export default function Component({ h1 }: { h1?: string }) {
                     <p>Atualmente, o MD5 é amplamente utilizado em situações que não exigem uma segurança forte, como verificação de integridade de arquivos e checksums simples. No entanto, para aplicações sensíveis, é recomendado o uso de algoritmos de hash mais seguros, como SHA-256 ou SHA-512, que oferecem maior resistência a ataques criptográficos e colisões.</p>
                 </Articles>
 
-                <Articles title={"O que é faz o MD5 encode (codificador)?"}>
-                    <p>O MD5 encode tem o objetivo de encriptar um texto para o formato texto para o formato de MD5.</p>
+                <Articles title={"O que é faz o MD5 Encrypt (codificador MD5)?"}>
+                    <p>
+                        Um codificador MD5, ou Encrypt MD5, é um algoritmo de criptografia que converte uma entrada de dados em um hash de 128 bits. É comumente usado para verificar a integridade de dados e senhas. O MD5 transforma os dados em uma sequência de caracteres única, tornando difícil reverter o processo e obter a informação original. É amplamente utilizado em sistemas de autenticação e verificação de integridade de arquivos.
+                    </p>
                 </Articles>
 
             </Conversor>
