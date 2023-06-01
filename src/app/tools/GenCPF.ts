@@ -56,5 +56,5 @@ export class GenCPF implements ToolInterface<String>{
     
 
     }
-
+    
 }
