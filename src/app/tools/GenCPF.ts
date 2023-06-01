@@ -38,8 +38,13 @@ export class GenCPF implements ToolInterface<String>{
             return result;
         }
     
-        if( mask.match(new RegExp(placeholder, 'g').length < 11) ) {
-            throw new Error('The CPF mask should contain 11 placeholders');
+        let regex: any = mask.match(new RegExp(placeholder, 'g'))
+
+        if(regex != null){
+            if( regex.length < 11) {
+                throw new Error('The CPF mask should contain 11 placeholders');
+            }
+    
         }
     
         const placeholderRegex = new RegExp(placeholder);
