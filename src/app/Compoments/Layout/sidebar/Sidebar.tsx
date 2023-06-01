@@ -37,7 +37,10 @@ export default function Sidebar({props}: { props: any }) {
         
         { url: "", name: "Rede", type: "categoria" },
         { url: "/meu-ip", name: "Meu Ip", type: "" },
-        { url: "/meu-navegador", name: "Meu navegador", type: "" }
+        { url: "/meu-navegador", name: "Meu navegador", type: "" },
+
+        { url: "", name: "Geradores", type: "categoria" },
+        { url: "/cpf/gn", name: "Gerador de CPF", type: "" },
 
     ]
 

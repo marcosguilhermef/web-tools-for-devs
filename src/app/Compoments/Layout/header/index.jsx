@@ -14,24 +14,26 @@ export default function Header() {
   }])
 
 
-  useEffect( () => {
-    ga4.send({ hitType: "pageview", page: window.location.href});
+  useEffect(() => {
+    ga4.send({ hitType: "pageview", page: window.location.href });
 
   })
 
   return (
     <header>
-        <Navbar expand='lg' className="mb-3 navbar-color" >
-          <Container>
-          <Image
-              alt=""
+      <Navbar expand='lg' className="mb-3 navbar-color" >
+        <Container>
+          <Navbar.Brand href="/">
+            <Image
+              alt="Logo"
               src="/logob.png"
               width="75"
               height="75"
               className="d-inline-block align-top"
             />{' '}
-          </Container>
-        </Navbar>
-    </header>
+          </Navbar.Brand>
+        </Container>
+      </Navbar>
+    </header >
   );
 }

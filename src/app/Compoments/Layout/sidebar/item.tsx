@@ -21,7 +21,7 @@ export default function Item({ props, close}: { props: any, close?: onclick | nu
     }else{
         return(
             <li className={router == url ? "item-sidebar item-sidebar-active" : "item-sidebar"}>
-                <Link href={url || ""}  onClick={closeSidebar}>
+                <Link href={url || ""} onClick={closeSidebar}>
                     { name }
                 </Link>
             </li>

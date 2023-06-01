@@ -15,7 +15,8 @@ import { EncSHA3_224 } from "./EncSHA3_224";
 import { EncSHA3_256 } from "./EncSHA3_256";
 import { EncSHA3_384 } from "./EncSHA3_384";
 import { EncSHA3_512 } from "./EncSHA3_512";
-
+import { DecMD5 } from "./DecMD5";
+import { GenCPF } from "./GenCPF";
 export{ 
     DecBase64,
     EncBase64,
@@ -33,5 +34,7 @@ export{
     EncSHA3_256,
     EncSHA3_384,
     EncSHA3_512,
+    DecMD5,
+    GenCPF
 }
     

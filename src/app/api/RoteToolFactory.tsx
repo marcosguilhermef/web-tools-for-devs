@@ -11,3 +11,9 @@ export default async function fatory(body: any, Class: new (value: string) => To
   return NextResponse.json({ data: null });
   
 }
+
+export async function fatoryGET(Class: new (value?: string) => ToolInterface<any>, body?: any) 
+{
+  const value = (new Class()).execute();
+  return NextResponse.json({ data: value});
+}
