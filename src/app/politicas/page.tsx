@@ -3,6 +3,9 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 export const metadata: Metadata = {
   title: 'Políticas',
+  alternates: { 
+    canonical:"https://toolsfordevs.com.br/politicas"
+    },
 };
 function Politicas() { 
     return (
