@@ -8,6 +8,7 @@ import onclick from "./type";
 export default function Sidebar({props}: { props: any }) {
 
     const [show, setShow] = useState<boolean>(false)
+    const [width, setWidth] = useState<number>()
 
     const Itens = [ 
         { url: "", name: "Codificadores", type: "categoria" },
@@ -54,10 +55,18 @@ export default function Sidebar({props}: { props: any }) {
 
     useEffect( () => {
         function resize(){
-            closeOptins();
+            if(window.innerWidth !== width && width !== undefined){
+                closeOptins();
+            }
         }
         window.addEventListener('resize', resize)
-    } )
+    },[width])
+
+    useEffect( () => {
+        if(window.innerWidth !== undefined){
+            setWidth(window.innerWidth)    
+        }
+    })
 
     return (
         <aside className="root-sidebar">
