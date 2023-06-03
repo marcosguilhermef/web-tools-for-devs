@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 export const metadata: Metadata = {
   title: 'Políticas',
+  description: "Políticas de privacidade e termos de uso do site toolsfordevs.com.br",
   alternates: { 
     canonical:"https://toolsfordevs.com.br/politicas"
     },

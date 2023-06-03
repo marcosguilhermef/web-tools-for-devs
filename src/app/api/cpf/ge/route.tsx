@@ -1,9 +1,11 @@
-import { GenCPF } from '@/app/tools';
-import { fatoryGET } from '@/app/api/RoteToolFactory'
+import { GerarCPF } from "documento-validacao-br";
+import { NextResponse } from "next/server";
 
 export const dynamic = 'force-dynamic';
 
 export async function GET(request: Request) 
 {
-  return await fatoryGET(GenCPF)
+  const value = (new GerarCPF()).execute()
+  return NextResponse.json({ data: value});
+
 }

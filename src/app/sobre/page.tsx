@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 export const metadata: Metadata = {
   title: 'Sobre',
+  description: "Informações sobre o site toolsfordevs.com.br",
   alternates: { 
     canonical:"https://toolsfordevs.com.br/sobre"
   },
@@ -11,7 +12,7 @@ function Sobre() {
     return (
             <div>
                 <p>
-                  O toolsfordevs.com.br tem o objetivo de facilitar a vida de programadores e usuários em geral da intert através de ferramentas de fácil uso.
+                  O toolsfordevs.com.br tem o objetivo de facilitar a vida de programadores e usuários em geral da internet através de ferramentas de fácil uso.
                 </p>
                 <p>
                   Sempre estaremos trabalhando para criar novas ferramentas que atendam as necessidades do usuário, que seja simples, prática e segura.

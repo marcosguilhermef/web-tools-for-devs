@@ -1,10 +1,9 @@
 import { NextResponse } from 'next/server';
-import { ValidateCPF } from '@/app/tools';
-
+import { ValidarCPF } from 'documento-validacao-br';
 
 export async function GET(request: Request, { params, }: { params: { cpf: string }; },) 
 {
-  const value = (new ValidateCPF(params.cpf)).execute();
+  const value = (new ValidarCPF(params.cpf)).execute();
   return NextResponse.json({ "data": value });
 }
   
