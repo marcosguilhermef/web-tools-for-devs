@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { ToolInterface } from 'documento-validacao-br/dist/ToolInterface';
+import  ToolInterface  from '@/app/tools/ToolInterface'
 export default async function fatory(body: any, Class: new (value: string) => ToolInterface<any>) 
 {
 
