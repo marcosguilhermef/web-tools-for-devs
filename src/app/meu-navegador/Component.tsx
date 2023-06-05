@@ -19,7 +19,6 @@ export default function MeuNavegador(){
     )
 
     useEffect( () => {
-        
         if(window?.navigator){
             setInfor( {
                 'appCodeName': window.navigator.appCodeName,
@@ -29,7 +28,7 @@ export default function MeuNavegador(){
                 'language': window.navigator.language,
             } )
         }
-    })
+    },[])
     return(
         <div>   
             <h1 className="text-title">Meu navegador</h1>

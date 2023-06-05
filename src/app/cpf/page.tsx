@@ -26,7 +26,7 @@ export default function Page(){
 
     return(
         <>
-            <Cpf h1={'Consultar CPF'}/>
+            <Cpf h1={'Validar CPF'}/>
         </>
     );
 }

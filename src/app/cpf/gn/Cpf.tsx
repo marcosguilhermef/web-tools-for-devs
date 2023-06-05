@@ -7,28 +7,49 @@ import Articles from '@/app/Compoments/Articles'
 
 export default function Cpf({ h1 }: { h1?: string }) {
     const [cpf, setCpf] = useState<string>();
+    const [formated, setFomated] = useState<boolean>(false);
     const [result, setResult] = useState<boolean | null>(null);
     const cpfRef = useRef<any>('')
     const URL = '/api/cpf/ge'
 
     async function mageRequest() {
-        const fetch = await new Fetch(`${URL}`, {}, Fetch.GET).doFetch();
-        setCpf(fetch.data)
+        const fetch = await new Fetch(`${URL}?formated=${formated}`, {}, Fetch.GET).doFetch();
+        cpfRef.current.value = fetch.data;
     }
 
 
-    function copiar(){
+    function copiar() {
         cpfRef.current.select()
         document.execCommand('copy');
     }
 
-    useEffect( () => {
+    function handle(e: any) {
+        const { value, name } = e.target
+        setFomated(value)
+    }
+    useEffect(() => {
         mageRequest()
-    },[])
+    }, [])
 
     return (
         <div>
             <h1 className="text-title">{h1}</h1>
+            <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Check
+                    type="radio"
+                    label={"Formatado"}
+                    value={'true'}
+                    name="formatado"
+                    onChange={handle}
+                />
+                <Form.Check
+                    type="radio"
+                    label={"Não formatado"}
+                    value={'false'}
+                    name="formatado"
+                    onChange={handle}
+                />
+            </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicEmail">
                 <InputGroup.Text className="label-name-input">
@@ -38,10 +59,8 @@ export default function Cpf({ h1 }: { h1?: string }) {
                     type="number w-25"
                     className="form-control-input"
                     onFocus={() => (setResult(null))}
-                    maxLength={11}
                     isValid={!!result}
                     isInvalid={result === null ? false : !result}
-                    value={cpf}
                     defaultValue={''}
                     ref={cpfRef}
                     readOnly

@@ -2,17 +2,28 @@
 import { Form, Button, InputGroup } from "react-bootstrap";
 import '@/app/conversor.css'
 import Fetch from "@/app/util/Fetch";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import Articles from '@/app/Compoments/Articles'
 
 export default function Cpf({ h1 }: { h1?: string }) {
     const [cpf, setCpf] = useState<string>();
     const [result, setResult] = useState<boolean | null>(null);
     const URL = '/api/cpf/vl'
+    const refCpf = useRef<any>('')
 
     function configureCPFValidation(e: any) {
         const { value } = e.currentTarget
         setCpf(value)
+        refCpf.current.value = cpfMask(value)
+
+    }
+
+    function cpfMask(v: string){
+        v=v.replace(/\D/g,"")                    
+        v=v.replace(/(\d{3})(\d)/,"$1.$2")       
+        v=v.replace(/(\d{3})(\d)/,"$1.$2")                                
+        v=v.replace(/(\d{3})(\d{1,2})$/,"$1-$2") 
+        return v
     }
 
     async function mageRequest() {
@@ -33,9 +44,10 @@ export default function Cpf({ h1 }: { h1?: string }) {
                     className="form-control-input"
                     onChange={configureCPFValidation}
                     onFocus={() => (setResult(null))}
-                    maxLength={11}
                     isValid={!!result}
                     isInvalid={result === null ? false : !result}
+                    maxLength={14}
+                    ref={refCpf}
                 />
                 <Form.Control.Feedback type="invalid">
                     CPF incorreto ou não existe.

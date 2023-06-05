@@ -26,7 +26,7 @@ export default function Page(){
 
     return(
         <>
-            <Cnpj h1={'Consultar CNPJ'}/>
+            <Cnpj h1={'Validar CNPJ'}/>
         </>
     );
 }

@@ -16,8 +16,11 @@ export default function Sidebar({props}: { props: any }) {
         { url: "/url/dc", name: "De URL para Texto", type: "" },
         { url: "/base64/ec", name: "De Texto para Base64", type: "" },
         { url: "/base64/dc", name: "De Base64 para Texto", type: "" },
+
         { url: "", name: "Validadores", type: "categoria" },
         { url: "/cpf", name: "Validar CPF", type: "" },
+        { url: "/cnpj", name: "Validar CNPJ", type: "" },
+
         { url: "", name: "Encriptar", type: "categoria" },
         { url: "/md5/ec", name: "MD5", type: "" },
 
