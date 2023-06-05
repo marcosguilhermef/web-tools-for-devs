@@ -7,7 +7,7 @@ export default function Component({ h1 }: { h1?: string }) {
     return (
         <div>
             <Conversor
-                h1="Codificador Base64"
+                h1="Base64 Encode"
                 url="/api/base64/ec"
                 t1={'de Texto'}
                 t2={'para Base64'}

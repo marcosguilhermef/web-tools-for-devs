@@ -7,7 +7,7 @@ export default function Component({ h1 }: { h1?: string }) {
     return (
         <div>
             <Conversor
-                h1="Decodificador Base64"
+                h1="Base64 Decode"
                 url="/api/base64/dc"
                 t1={'de Base64'}
                 t2={'para texto'}

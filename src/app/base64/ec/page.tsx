@@ -1,13 +1,13 @@
 import { Metadata } from "next";
 import Component from "./Component";
 export const metadata: Metadata = {
-    title: 'Codificador Base64 - ToolsForDev.com.br',
+    title: 'Base64 Encode - ToolsForDev.com.br',
     description: "Transforme seu texto em uma representação segura e compacta usando a codificação Base64. Com esta ferramenta, você pode converter texto em Base64, que é amplamente utilizado para transmitir e armazenar dados de forma eficiente. Garanta a integridade dos seus dados com esta ferramenta de conversão simples e eficaz.",
     alternates: { 
         canonical:"https://toolsfordevs.com.br/base64/ec"
     },
     openGraph: {
-       "title": "Codificador Base64 - ToolsForDev.com.br",
+       "title": "Base64 Encode - ToolsForDev.com.br",
        "description": "Transforme seu texto em uma representação segura e compacta usando a codificação Base64. Com esta ferramenta, você pode converter texto em Base64, que é amplamente utilizado para transmitir e armazenar dados de forma eficiente. Garanta a integridade dos seus dados com esta ferramenta de conversão simples e eficaz.",
        url: 'https://toolsfordevs.com.br/base64/ec',
        images: [
