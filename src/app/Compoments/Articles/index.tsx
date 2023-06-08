@@ -4,7 +4,7 @@ export default function Index({children, title}: { children?: React.ReactNode, t
     return(
         <div className="article" itemScope itemType="https://schema.org/Question">
             <h2 itemProp="name"> { title }</h2>
-            <div itemProp="acceptedAnswer" itemType="https://schema.org/Answer">
+            <div itemProp="acceptedAnswer" itemScope itemType="https://schema.org/Answer">
                 <div itemProp="text">{ children }</div>
             </div>
         </div>

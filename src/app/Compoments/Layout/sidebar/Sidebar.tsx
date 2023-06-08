@@ -45,6 +45,7 @@ export default function Sidebar({props}: { props: any }) {
 
         { url: "", name: "Geradores", type: "categoria" },
         { url: "/cpf/gn", name: "Gerador de CPF", type: "" },
+        { url: "/cnpj/gn", name: "Gerador de CNPJ", type: "" },
 
     ]
 

@@ -2,18 +2,32 @@
 import { Form, Button, InputGroup } from "react-bootstrap";
 import '@/app/conversor.css'
 import Fetch from "@/app/util/Fetch";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import Articles from '@/app/Compoments/Articles'
 
 export default function Cnpj({ h1 }: { h1?: string }) {
     const [cnpj, setCnpj] = useState<string>();
     const [result, setResult] = useState<boolean | null>(null);
+    const cnpjRef = useRef<any>('')
     const URL = '/api/cnpj/vl'
+
 
     function configureCPFValidation(e: any) {
         const { value } = e.currentTarget
         setCnpj(value)
+        cnpjRef.current.value = cnpjMask(value)
     }
+
+    function cnpjMask(v: string){
+        v=v.replace(/\D/g,"")                    
+        v=v.replace(/(\d{2})(\d)/,"$1.$2")       
+        v=v.replace(/(\d{3})(\d)/,"$1.$2")                                
+        v=v.replace(/(\d{3})(\d{4})/,"$1/$2")
+        v=v.replace(/(\d{4})(\d{2})$/,"$1-$2")
+        return v
+    }
+
+
 
     async function mageRequest() {
         const fetch = await new Fetch(`${URL}`, {
@@ -35,9 +49,10 @@ export default function Cnpj({ h1 }: { h1?: string }) {
                     className="form-control-input"
                     onChange={configureCPFValidation}
                     onFocus={() => (setResult(null))}
-                    maxLength={14}
+                    maxLength={18}
                     isValid={!!result}
                     isInvalid={result === null ? false : !result}
+                    ref={cnpjRef}
                 />
                 <Form.Control.Feedback type="invalid">
                     CNPJ incorreto ou não existe.
