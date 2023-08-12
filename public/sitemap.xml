@@ -38,6 +38,22 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://toolsfordevs.com.br/cpf/gn</loc>
+  <lastmod>2023-06-02T00:04:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://toolsfordevs.com.br/cnpj</loc>
+  <lastmod>2023-06-08T00:04:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://toolsfordevs.com.br/cnpj/gn</loc>
+  <lastmod>2023-06-08T00:04:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>https://toolsfordevs.com.br/md5/ec</loc>
   <lastmod>2023-06-01T00:04:38+00:00</lastmod>
   <priority>0.80</priority>
