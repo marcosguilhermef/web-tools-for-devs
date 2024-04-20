@@ -5,7 +5,6 @@ import { GeolocationNotAvaible } from "./Exceptions/GeolocationNotAvaible";
 import { GeoLocationPermissionDenied } from "./Exceptions/GeoLocationPermissionDenied";
 import { GeoLocationTimeOut } from "./Exceptions/GeoLocationTimeOut";
 import { GeoLocationUnknowError } from "./Exceptions/GeoLocationUnknowError";
-import { Card } from "react-bootstrap";
 export class GpsTracker implements ToolInterface<Dispatch<SetStateAction<location | undefined>>>{
     parameter?: Dispatch<SetStateAction<location | undefined>>;
     role: string = 'tracker'

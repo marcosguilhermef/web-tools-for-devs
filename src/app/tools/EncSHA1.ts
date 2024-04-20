@@ -1,3 +1,5 @@
+import ToolInterface from "@/app/tools/ToolInterface";
+
 var crypto = require('crypto');
 
 export class EncSHA1 implements ToolInterface<String>{

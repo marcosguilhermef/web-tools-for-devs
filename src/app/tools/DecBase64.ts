@@ -1,3 +1,5 @@
+import ToolInterface from "@/app/tools/ToolInterface";
+
 export class DecBase64 implements ToolInterface<String>{
 
     parameter: string;

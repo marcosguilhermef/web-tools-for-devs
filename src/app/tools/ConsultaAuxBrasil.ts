@@ -1,4 +1,5 @@
 import Fetch from "../util/Fetch";
+import ToolInterface from "@/app/tools/ToolInterface";
 export class ConsultaAuxBrasil implements ToolInterface<AuxilioType>{
     
     parameter: AuxilioType

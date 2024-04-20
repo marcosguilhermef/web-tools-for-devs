@@ -1,4 +1,5 @@
 import Fetch from "../util/Fetch";
+import ToolInterface from "@/app/tools/ToolInterface";
 export class ConsultCep implements ToolInterface<String>{
     parameter: string;
     role: string = 'consulta'

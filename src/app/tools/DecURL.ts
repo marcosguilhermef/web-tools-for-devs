@@ -1,3 +1,5 @@
+import ToolInterface from "@/app/tools/ToolInterface";
+
 export class DecURL implements ToolInterface<String>{
 
     parameter: string;

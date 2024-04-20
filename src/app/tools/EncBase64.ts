@@ -1,3 +1,5 @@
+import ToolInterface from "@/app/tools/ToolInterface";
+
 export class EncBase64 implements ToolInterface<String>{
 
     parameter: string;

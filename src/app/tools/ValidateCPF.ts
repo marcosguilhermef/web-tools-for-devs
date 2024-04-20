@@ -1,3 +1,5 @@
+import ToolInterface from "@/app/tools/ToolInterface";
+
 export class ValidateCPF implements ToolInterface<String>{
     parameter: string;
     role: string = 'validador'

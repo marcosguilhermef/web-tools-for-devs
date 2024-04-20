@@ -1,9 +1,11 @@
+import ToolInterface from "@/app/tools/ToolInterface";
+
 var crypto = require('crypto');
 
 export class EncMD5 implements ToolInterface<String>{
 
     parameter: string;
-    role: string = 'codificador'
+    role: string = 'codificador';
 
     constructor(value : string){
         this.parameter = value;

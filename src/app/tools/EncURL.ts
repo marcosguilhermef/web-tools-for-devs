@@ -1,3 +1,5 @@
+import ToolInterface from "@/app/tools/ToolInterface";
+
 export class EncURL implements ToolInterface<String>{
 
     parameter: string;

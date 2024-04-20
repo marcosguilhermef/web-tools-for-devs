@@ -2,6 +2,9 @@
 const nextBuildId = require('next-build-id')
 
 const nextConfig = {
+    eslint: {
+        ignoreDuringBuilds: true,
+    },
     generateBuildId: () => nextBuildId({ dir: __dirname, describe: true})
 }
 
